@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 11f;
     public float jumpForce = 5f;
 
     public Transform playerCamera;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
         }
     }
 
@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour
         Vector3 move = forward * moveZ + right * moveX;
 
         Vector3 velocity = move * moveSpeed;
-        velocity.y = rb.velocity.y;
+        velocity.y = rb.linearVelocity.y;
 
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 
     void LateUpdate()
