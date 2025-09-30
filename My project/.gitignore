@@ -97,3 +97,8 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Ignore giant Unity files
+My project/Assets/ALP_Assets/Realistic Terrain Textures Lite/Scenes/TerrainDATA/Terrain.asset
+My project/Assets/ALP_Assets/Realistic Terrain Textures Lite/Textures/Ground001.tif
+My project/Assets/ALP_Assets/Realistic Terrain Textures Lite/Textures/Ground001_N.png
