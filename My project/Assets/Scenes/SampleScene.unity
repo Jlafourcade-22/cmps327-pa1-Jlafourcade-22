@@ -395,7 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCoins
   totalCoins: 0
   coinText: {fileID: 2125181920}
-  victoryEffect: {fileID: 1931146779}
+  explosion: {fileID: 1931146777}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6822,7 +6822,7 @@ Transform:
   m_GameObject: {fileID: 1931146777}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 629.8, y: 3, z: 293.45}
+  m_LocalPosition: {x: 340, y: -26618, z: 786}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
